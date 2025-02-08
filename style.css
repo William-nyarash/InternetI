@@ -1,0 +1,174 @@
+/* General Reset and Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: #f0f8ff;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background: #1d3557;
+    color: #f1faee;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Container for sections */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+/* Biography Section */
+.biography {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.biography h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #1d3557;
+}
+
+.biography p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #666;
+}
+
+.biography a {
+    color: #1d3557;
+    text-decoration: none;
+}
+
+.biography a:hover {
+    text-decoration: underline;
+}
+
+/* Marquee */
+marquee {
+    font-size: 1.2em;
+    color: #ff6f61;
+    font-style: italic;
+    padding: 10px 0;
+}
+
+/* Image */
+.biography img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Education Section */
+.education {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.education h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #1d3557;
+}
+
+.education ul {
+    list-style: none;
+}
+
+.education li {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.education strong {
+    color: #1d3557;
+}
+
+.education p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+/* Achievements Section */
+.achievements {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.achievements h2 {
+    font-size: 2.2em;
+    color: #1d3557;
+    margin-bottom: 15px;
+}
+
+.achievements ul {
+    list-style-type: none;
+}
+
+.achievements li {
+    margin-bottom: 20px;
+}
+
+.achievements p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+.achievements a {
+    color: #ff6f61;
+    text-decoration: none;
+}
+
+.achievements a:hover {
+    text-decoration: underline;
+}
+
+/* Personal Life Section */
+section p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    line-height: 1.8;
+    color: #666;
+}
+
+section h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    color: #1d3557;
+}
+
+/* Footer */
+footer {
+    background: #1d3557;
+    color: #f1faee;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 8px;
+    font-size: 1.1em;
+}
