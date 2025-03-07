@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="/css/other.css">
+  <title>We Fix - Contact</title>
+  <style>
+            main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            width: 100%;
+        }
+        section{
+            text-align: center;
+            margin-inline: 28px;
+        }
+        h2{
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        form{
+          position: relative;
+          width: 100%;
+        }
+        input,textArea{
+          width: 80%;
+          padding: 8px;
+          margin-bottom: 8px;
+          border: 1px solid var(--color-warning);
+          border-radius: 4px;
+        }
+        p{
+            font-size: 1.2rem;
+            color: #333;
+        } 
+        #contact {
+          width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 400px;
+    padding-block: 12px;
+    background: var(--color-warning);
+    text-align: center;
+        }
+        label{
+          display: block;
+          font-size: 1.2rem;
+          margin-bottom: 4px;
+        }
+        button{
+          width: 60%;
+    height: 36px;
+    font-size: 1.02rem;
+    border-radius: 12px;
+    border: none;
+    background: var(--color-sunshine);
+        }
+        button:hover{
+          background: var(--color-warning), 0.3;
+          color: var(--color-sunshine);
+        }
+        footer{
+          width: 100%;
+        }
+        footer ul{
+          display: flex;
+          justify-content: space-evenly;
+          padding: 12px;
+          width: 90%;
+          margin: auto;
+        }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      we<span>fix</span>
+    </div>
+  
+    <input type="checkbox" id="checklist">
+    <label for="checklist" class="checklist"></label>
+  
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </header>  
+  <main>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" id="name" name="name" required placeholder="name">
+        <input type="email" id="email" name="email" required placeholder="email">
+        <textarea id="message" name="message" required placeholder="enter your message here"></textarea>
+        
+        <button type="submit" class="call">Send Message</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <ul>
+      <li>&copy; All rights reserved 2025</li>
+      <li><a href="#">Affiliates</a></li>
+      <li><a href="#">Privacy</a></li>
+    </ul>
+  </footer>
+  <script src="js/scripts.js"></script> 
+</body>
+</html>

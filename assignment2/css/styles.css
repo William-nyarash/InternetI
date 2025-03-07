@@ -1,0 +1,318 @@
+:root {
+  --color-dark: #0C1713;
+  --color-neutral: #D9D0DE;
+  --color-warning: #BC627D;
+  --color-sunshine: #F7B32B;
+  --color-casual: #5F7081;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: var(--color-dark);
+  background-color: var(--color-neutral);
+  line-height: 1.6;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-dark);
+}
+
+header {
+  padding: 10px 20px;
+  background: var(--color-sunshine);
+  width: 90%;
+  margin-inline: auto;
+  border-radius: 12px;
+  height: 65px;
+  position: relative;
+  color: var(--color-dark);
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  background: var(--color-sunshine);
+  padding: 20px;
+  border-radius: 0 0 12px 12px;
+}
+
+header ul li {
+  padding: 10px 0;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: var(--color-dark);
+}
+
+header a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color-dark);
+  padding-bottom: 5px;
+  position: relative;
+}
+
+header a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background: var(--color-warning);
+  transition: width 0.4s ease;
+}
+
+header a:hover::after {
+  width: 100%;
+}
+
+header a:hover {
+  transform: translate3d(1px, 8px, 12px);
+  box-shadow: 4px 4px 3px 2px var(--color-warning);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.checklist {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  margin: 12px;
+  background: var(--color-dark);
+  width: 27px;
+  height: 2px;
+  font-size: 50px;
+  bottom: 27px;
+}
+
+.checklist::before,
+.checklist::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 27px;
+  height: 2px;
+  background: var(--color-dark);
+}
+
+.checklist::before {
+  top: -6px;
+}
+
+.checklist::after {
+  top: 6px;
+}
+
+#checklist:checked + label + ul {
+  display: block;
+    z-index: 99;    
+}
+
+@media (min-width: 700px) {
+  header{
+    padding: 10px 20px;
+    background: var(--color-sunshine);
+    width: 90%;
+    margin-inline: auto;
+    border-radius: 12px;
+    height: 65px;
+    color: var(--color-dark);
+  }
+  header label {
+    visibility: hidden;
+  }
+  header ul {
+    display: flex
+    ;
+            flex-direction: row;
+            background: none;
+            width: 60%;
+            position: relative;
+            justify-content: space-evenly;
+            align-content: center;
+            flex-wrap: wrap;
+            top: 0;
+  }
+}
+
+.hero {
+  width: 100%;
+  margin-inline: auto;
+  height: 40vh;
+  background-size: cover;
+  background: url(../assets/img1/samsung-memory-6RcDLyy0s1I-unsplash.jpg) no-repeat center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--color-neutral);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero .p {    
+  width: 80%;
+  font-size: 1.2rem;
+  color: var(--color-dark);
+  margin-inline: auto;
+}
+.service {
+  background: var(--color-dark);
+  padding: 55px 30px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 12px;
+  flex-direction: row;
+}
+
+.service .tile {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 12px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 2px;
+  align-items: center;
+  background: var(--color-warning);
+  padding: 12px 6px;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+.tile .icon {
+  width: 100%;
+  border-radius: 12px;
+  height: 130px;
+}
+.icon img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.tile .p_s {
+  width: 80%;
+  font-size: 1.2rem;
+  text-align: center;
+  color: var(--color-neutral);
+  margin-top:6px;
+  margin-bottom: 20px;
+  font-family: system-ui;
+}
+
+.tile .p_s div {
+  font-size: 1rem;
+  margin-top: 20px;
+  position: absolute;
+  right: 0;
+  margin-inline: 9px;
+  bottom: 1px;
+  margin-block: 12px;
+}
+
+.action {
+  background: var(--color-neutral);
+  padding-block: 40px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.action .video {
+  width: 72%;
+  height: 188px;
+  margin-inline: auto;
+  border-radius: 27px;
+  margin-block: 30px;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.action .call {
+  padding: 12px;
+  text-align: center;
+  border-radius: 12px;
+  background: var(--color-warning);
+  width: 200px;
+  margin-inline: auto;
+  margin-block: 30px;
+  color: var(--color-neutral);
+  cursor: pointer;
+}
+
+footer {
+  background: var(--color-dark);
+  color: var(--color-neutral);
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer ul li {
+  padding: 10px 0;
+}
+
+footer ul li a {
+  color: var(--color-neutral);
+}
+
+@media (min-width: 700px) {
+  .hero {
+    height: 60vh;
+  }
+  .action .video {
+    width: 63%;
+    height: 288px;
+  }
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>We Fix - Services</title>
+  <style>
+            main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding-block: 20px;
+        }
+        section{
+            text-align: center;
+            margin-inline: 28px;
+        }
+        p{
+            font-size: 1.2rem;
+            color: #333;
+        } 
+        footer{
+          width: 100%;
+        }
+        footer ul{
+          display: flex;
+          justify-content: space-evenly;
+          padding: 12px;
+          width: 90%;
+          margin: auto;
+        }
+        .service{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 12px;
+          padding: 12px;
+          width: 100%;
+          background: var(--color-light);
+          border-radius: 12px;
+        }
+        .service h2{
+          font-size: 2rem;
+          color: var(--color-dark);
+          margin-bottom: 1rem;
+        }
+        .tile_container{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          gap: 12px;
+          padding: 12px;
+          width: 100%;
+          margin: auto;
+        }
+        .tile{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 12px;
+          padding: 12px;
+          width: 100%;
+          background: var(--color-light);
+          border-radius: 12px;
+        }
+        .icon{
+          width: 100px;
+          height: 100px;
+          background: var(--color-warning);
+          border-radius: 50%;
+        }
+        .p_s{
+          font-size: 1.2rem;
+          color: var(--color-netral);
+        }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      we<span>fix</span>
+    </div>
+  
+    <input type="checkbox" id="checklist">
+    <label for="checklist" class="checklist"></label>
+  
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </header>  
+  <main>
+    <section class="service">
+      <h2>Our Services</h2>
+      <div class="tile_container">
+      <div class="tile">
+        <div class="icon"></div>
+        <p class="p_s">Repair Services</p>
+      </div>
+      <div class="tile">
+        <div class="icon"></div>
+        <p class="p_s">Consultation</p>
+      </div>
+      <div class="tile">
+        <div class="icon"></div>
+        <p class="p_s">Maintenance</p>
+      </div>
+    </div>
+    </section>
+  </main>
+  <footer>
+    <ul>
+      <li>&copy; All rights reserved 2025</li>
+      <li><a href="#">Affiliates</a></li>
+      <li><a href="#">Privacy</a></li>
+    </ul>
+  </footer>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
