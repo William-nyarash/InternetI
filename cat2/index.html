@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage - Man Called William</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; 
+            font-family: 'Arial', sans-serif;
+            background-color: #FFFCF2;
+            color: #392F5A; 
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #726E60; 
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 2em;
+            color: #EB5E28; 
+            font-weight: bold;
+        }
+
+        .nav_bar {
+            list-style-type: none;
+            display: flex;
+        }
+
+        .nav_links {
+            margin: 0 1.5em;
+        }
+
+        .nav_links a {
+            text-decoration: none;
+            color: #FFF;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav_links a:hover {
+            color: #EB5E28; 
+        }
+
+        .container {
+            flex: 1; 
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            padding: 2em;
+        }
+
+        .hero {
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+
+        footer {
+            background-color: #726E60;
+            padding: 1em;
+            text-align: center;
+            color: #FFF;
+        }
+
+        .footer_element {
+            list-style-type: none;
+            margin: 0.5em 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">William</div>
+        <ul class="nav_bar">
+            <li class="nav_links"><a href="./childhood.html">Childhood</a></li>
+            <li class="nav_links"><a href="./education.html">Education</a></li>
+            <li class="nav_links"><a href="./skills.html">Skills</a></li>
+            <li class="nav_links"><a href="./vision.html">Vision</a></li>
+            <li class="nav_links"><a href="./contact.html">Contact</a></li>
+        </ul>
+    </header>
+    <section class="container">
+        <div class="hero">
+            <h2>The Man Called <span>William</span></h2>
+            <p>Welcome to my personal journey. Here, I share my experiences, skills, and aspirations.</p>
+            <p>Join me as I explore the pivotal moments that shaped my identity and fueled my ambitions.</p>
+        </div>
+    </section>
+    <footer>
+        <ul>
+            <li class="footer_element">&copy; 2025</li>
+            <li class="footer_element"><a href="/privacy.html">Privacy</a></li>
+            <li class="footer_element">Built on stable ground</li>
+        </ul>
+    </footer>
+</body>
+</html>
